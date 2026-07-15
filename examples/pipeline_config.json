@@ -1,0 +1,22 @@
+{
+  "vectorstore": {
+    "provider": "qdrant",
+    "url": "http://localhost",
+    "port": 6333,
+    "api_key": "[ENCRYPTION_KEY]"
+  },
+  "embeddings": {
+    "provider": "local",
+    "model": "all-MiniLM-L6-v2"
+  },
+  "chunker": {
+    "type": "recursive",
+    "chunk_size": 150,
+    "chunk_overlap": 20
+  },
+  "retriever": {
+    "collection_name": "config_demo_collection",
+    "limit": 3,
+    "hybrid": false
+  }
+}
